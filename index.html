@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container  py-5">
+        <h1 class="pb-5">product management system</h1>
+
+        <div class="form-group">
+            <label for="product-name-input ">product name</label>
+            <input class="form-control  my-3" type="text" id="product-name-input" name="product-name">
+
+        </div>
+        <div class="form-group">
+            <label for="#product-price-input ">product price</label>
+            <input class="form-control  my-3" type="number" id="product-price-input" name="product-price">
+
+        </div>
+        <div class="form-group">
+            <label for="product-category-input ">product category</label>
+            <input class="form-control  my-3" type="text" id="product-category-input" name="product-category">
+
+        </div>
+        <div class="form-group">
+            <label for="product-description-input ">product description</label>
+            <input class="form-control  my-3" type="text" id="product-description-input" name="product-description">
+
+        </div>
+
+        <button onclick="addProduct()" id="addproduct" class="btn btn-outline-primary py-2 px-4">Add Product</button>
+
+        <input type="search" placeholder="Search" oninput="findproduct(this.value)" class="form-control w-50 m-auto my-3">
+        <br>
+        <hr>
+
+        <table class="w-100">
+            
+            <thead class="table">
+                <th>
+                    index
+                </th>
+
+                <th>
+                    Product Name
+                </th> 
+                <th>
+                    Product price
+                </th>
+                <th>
+                    Product category
+                </th>
+                <th>
+                    Product description
+                </th>
+                <th>
+                    Update 
+                </th>
+                <th>
+                    Delete 
+                </th>
+
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
+
+
